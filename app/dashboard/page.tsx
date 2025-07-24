@@ -1,9 +1,5 @@
-import HeaderDashboard from "@/components/headerDashboard";
+import { redirect } from "next/navigation";
 
 export default function DashboardPage() {
-  return (
-    <div>
-      <HeaderDashboard>Overview</HeaderDashboard>
-    </div>
-  )
+  redirect("/dashboard/overview");
 }

@@ -19,7 +19,7 @@ export default function NavDashboard({ links }: PageProps) {
         <Link
           key={link.link}
           href={`/dashboard/${link.link}`}
-          className={`flex items-center gap-[5px] ${'/dashboard' + link.link === pathname ? "text-blue-400" : "text-white"}`}
+          className={`flex items-center gap-[10px] py-[20px] text-[17px] ${'/dashboard' + link.link === pathname ? "text-blue-400" : "text-white"}`}
         >
           {link.icon}
           {link.title}

@@ -1,4 +1,3 @@
-import HeaderDashboard from "@/components/headerDashboard";
 import Sidebar from "@/components/sidebar";
 
 export default function DashboardLayout({
@@ -7,7 +6,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-[300vh]">
+    <div className="flex">
       <Sidebar />
       <div className="w-[75%]">
         {children}

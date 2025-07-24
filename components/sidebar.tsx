@@ -7,6 +7,7 @@ import { IoTimeSharp } from "react-icons/io5";
 import { MdMenuBook } from "react-icons/md";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 import NavDashboard from "./nav";
+import { ThemeSwitcher } from "./themeChanger";
 
 const links = [
   {
@@ -55,12 +56,17 @@ const links = [
 export default function Sidebar() {
   return (
     <div className="w-[25%] bg-[#252525]">
-      <div className="sticky top-0">
-        <div className="logo flex items-center gap-[10px] border-b border-slate-200 h-[90px] px-[15px]">
-          <Image src={"/logo.png"} alt="the logo" width={50} height={50} />
-          <h1 className="font-semibold text-[24px]">Fast Budget</h1>
+      <div className="sticky top-0 h-screen flex flex-col justify-between">
+        <div>
+          <div className="logo flex items-center gap-[10px] border-b border-slate-200 h-[90px] px-[15px]">
+            <Image src={"/logo.png"} alt="the logo" width={50} height={50} />
+            <h1 className="font-semibold text-[24px]">Fast Budget</h1>
+          </div>
+          <NavDashboard links={links} />
         </div>
-        <NavDashboard links={links} />
+        <div className="px-[15px] pb-[40px]">
+          <ThemeSwitcher />
+        </div>
       </div>
     </div>
   );
