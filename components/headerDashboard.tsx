@@ -7,7 +7,7 @@ export default function HeaderDashboard({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-[#252525] w-full flex items-center justify-between px-[15px] h-[90px]">
+    <div className="bg-[#252525] w-full flex items-center justify-between px-[15px] h-[90px] sticky top-0 z-[99999]">
       <div className="flex gap-[15px] items-center">
         <button>
           <GiHamburgerMenu />
